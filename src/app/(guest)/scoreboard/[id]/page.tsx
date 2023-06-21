@@ -22,7 +22,7 @@ const ScoreboardPage: React.FC<ScoreboardPageProps> = async ({ params }) => {
 
   return (
     <section className="h-[90vh] flex flex-col items-center mt-16">
-      <p className="text-xl font-bold uppercase">
+      <p className="text-center text-lg md:text-xl font-bold uppercase">
         Scoreboard de <span className="text-primary">{subjectName}</span>
       </p>
 
