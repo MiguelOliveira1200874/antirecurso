@@ -3,7 +3,7 @@
 import { Menu } from '@/styles/Icons';
 import { useState } from 'react';
 import PrimaryButton from '../PrimaryButton';
-import Link from 'next/link';
+import Link from 'next/dist/client/link';
 
 interface HamburgerMenuProps {
   token: string | undefined;
@@ -21,10 +21,10 @@ const HamburgerMenu: React.FC<HamburgerMenuProps> = ({ token }) => {
       <Menu className="text-primary hover:cursor-pointer" onClick={handleClickMenu} />
       {isOpen && (
         <div className="absolute left-0 top-20 w-screen bg-white h-auto p-5 border border-gray-100 shadow rounded flex flex-col space-y-5">
-          <Link href="/" className="hover:text-primary transition ease-in-out text-start">
+          <Link href="/" className="hover:text-primary transition ease-in-out">
             <button className="w-ful">Home</button>
           </Link>
-          <Link href="/exams" className="hover:text-primary transition ease-in-out">
+          <Link href="/exams" replace className="hover:text-primary transition ease-in-out">
             <button className="w-ful">Exames</button>
           </Link>
           <Link href="/scoreboard" className="hover:text-primary transition ease-in-out">
