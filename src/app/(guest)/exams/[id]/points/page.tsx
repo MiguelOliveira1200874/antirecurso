@@ -51,7 +51,11 @@ const Points: React.FC<ExamPageProps> = ({ params }) => {
 
   return (
     <section className="h-screen flex flex-col items-center mt-4">
+<<<<<<< HEAD
       <p className="text-center text-lg md:text-xl font-bold uppercase md:mt-60 ml-5">
+=======
+      <p className="text-xl font-bold uppercase md:mt-60 ml-5 text-center px-4">
+>>>>>>> main
         Exame de <span className="text-primary">{subject}</span>
       </p>
       <div className="flex items-center justify-center mt-10 space-x-3">
