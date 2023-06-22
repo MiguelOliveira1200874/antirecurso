@@ -1,9 +1,12 @@
+import LogoutButton from '@/components/LogoutButton';
 import PreviousExamsTable from '@/components/PreviousExamsTable';
 import PrimaryButton from '@/components/PrimaryButton';
 import UserProfileScoreboard from '@/components/UserProfileScoreboard';
 import Link from 'next/link';
 import { BASE_URL } from 'src/services/api';
 import User from 'src/types/User';
+
+import swal from 'sweetalert';
 
 interface ProfileProps {
   params: {
@@ -54,6 +57,7 @@ const Profile: React.FC<ProfileProps> = async ({ params }) => {
           </Link>
         </section>
       )}
+      <LogoutButton />
     </section>
   );
 };
